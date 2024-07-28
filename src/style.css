@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2E3B4E;
+  color: #fff;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  background-color: #3B4B61;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hero {
+  margin-top: 80px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #aab3c1;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #50668F;
+  color: #fff;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #63799C;
+}
+
+.features {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style: none;
+}
+
+.features li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 18px;
+  color: #aab3c1;
+}
+
+.search {
+  margin-top: 20px;
+}
+
+.search input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 300px;
+  transition: box-shadow 0.3s ease;
+}
+
+.search input:focus {
+  box-shadow: 0 0 10px rgba(80, 102, 143, 0.7);
+}
+
+.container {
+  max-width: 700px;
+  background: #3B4B61;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.location p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.temp h1 {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.description p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.bottom > div {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.bold {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background: #2B3547;
+  font-size: 14px;
+  color: #aab3c1;
+  position: fixed;
+  bottom: 0;
+}
+
+footer .social {
+  margin-top: 10px;
+}
+
+footer .social a {
+  color: #aab3c1;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+  color: #fff;
+}
+
+.about {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #aab3c1;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .features h2 {
+    font-size: 24px;
+  }
+
+  .features li {
+    font-size: 16px;
+  }
+
+  .search input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .temp h1 {
+    font-size: 36px;
+  }
+
+  .location p, .bold {
+    font-size: 16px;
+  }
+
+  .bottom {
+    padding: 5px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .about h1 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar h1 {
+    font-size: 18px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .features h2 {
+    font-size: 20px;
+  }
+
+  .features li {
+    font-size: 14px;
+  }
+
+  .temp h1 {
+    font-size: 28px;
+  }
+
+  .location p, .bold {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+}
